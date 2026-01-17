@@ -1,0 +1,13 @@
+{
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.arguments": [
+        "--background-index", // 后台建立索引，解决大型库卡顿
+        "--clang-tidy", // 开启静态检查
+        "--header-insertion=never", // 防止它胡乱自动引入头文件
+        "--compile-commands-dir=.vscode", // 告诉 clangd 在 build 目录下找 compile_commands.json
+        "--completion-style=detailed",
+        "--fallback-style=llvm", // 默认代码风格设为 LLVM
+        "-j=12" // 使用多少线程索引
+    ],
+    "clangd.path": "clangd" // 如果 clangd 不在环境变量，请填入绝对路径
+}

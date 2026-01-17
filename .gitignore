@@ -1,0 +1,17 @@
+# Xmake cache
+.xmake/
+build/
+
+# MacOS Cache
+.DS_Store
+
+# vscode
+.vscode/compile_commands.json
+.vscode/.cache
+
+# vs
+vsxmake2022
+vsxmake2026
+
+# cmake
+CMakeLists.txt
